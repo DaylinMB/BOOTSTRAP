@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'rubik';
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+// Colores personalizados
+$custom-colors: #FA5959;
+$custom-colors-principal: #5265E1;
+$custom-colors-text: rgb(131, 131, 131);
+$custom-border-radius: 6px; // Este debería ser un valor numérico, no un color
+
+// Margen personalizado
+$custom-margin-size: 90px;
+
+.my-custom-margin {
+  margin-top: $custom-margin-size;
+}
+
+.custom-shape {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+nav {
+  background-color: white;
+  display: block;
+  
+}
+
+.navbar ul {
+  display: flex;
+  
+}
+
+.navbar ul li a {
+  text-decoration-color: none;
+  color: black;
+  padding: 10px;
+  margin: 15px;
+}
+
+.logo {
+  cursor: pointer;
+  padding: 0;
+}
+
+.display-3.bold-text {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.text {
+  color: $custom-colors-text;
+  font-size: 20px;
+}
+
+.text-2 {
+  color: $custom-colors-text;
+  font-size: 20px;
+}
+
+.text-3 {
+  color: $custom-colors-text;
+  font-size: 20px;
+}
+
+.btn.btn-primary {
+  border-radius: $custom-border-radius;
+  padding: 10px 40px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: $custom-colors;
+  border-color: $custom-colors;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+.btn.btn-primary:hover {
+  color: $custom-colors;
+  background-color: white;
+  border-color: $custom-colors;
+}
+
+.title.display-3.bold-text {
+  font-size: 2.5rem;
+}
+
+.col2 {
+  margin-right: 100px;
+}
+
+.btn.btn-info {
+  border-radius: $custom-border-radius;
+  padding: 10px 40px;
+  font-size: 16px;
+  color: white;
+  background-color: $custom-colors-principal;
+  border-color: $custom-colors-principal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-info:hover {
+  color: rgb(80, 80, 80);
+  background-color: whitesmoke;
+  border-color: transparent;
+}
+
+.btn.btn-info2 {
+  border-radius: $custom-border-radius;
+  padding: 10px 40px;
+  margin:10px;
+  font-size: 16px;
+  color: white;
+  background-color: $custom-colors-principal;
+  border-color: $custom-colors-principal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-info2:hover {
+  color: rgb(80, 80, 80);
+  background-color: whitesmoke;
+  border-color: none;
+}
+
+.img-fluid {
+  position: relative;
+  z-index: 0;
+}
+
+.cuadrado {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 200px;
+  bottom: 150px;
+  background: $custom-colors-principal;
+  z-index: -1;
+}
+
+.img-fluid2 {
+  margin: 100px;
+  position: relative;
+  z-index: 0;
+}
+
+.cuadrado2 {
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+  background: $custom-colors-principal;
+  z-index: -1;
+  margin-top: 200px;
+}
+
+.container-0 {
+  margin: 10px;
+}
+
+.container-1 {
+  padding: 20px;
+  margin: 0 320px;
+}
+
+.container-2 {
+  padding-top: 100px;
+  margin: 0 330px;
+}
+
+.container-3 {
+  padding: 20px;
+}
+
+.child-element {
+  max-width: 800px; // Ajusta el ancho máximo según sea necesario
+  margin: 0 auto; // Esto centrará horizontalmente el elemento dentro de su contenedor
+}
+
+body {
+  background-color: white;
+}
+
+a.nav-link {
+  color: rgb(61, 60, 60);
+  font-size: 18px;
+}
+
+a.nav-link:hover {
+  color: $custom-colors;
+}
+
+.nav2 a.nav-link {
+  color: rgb(61, 60, 60);
+  font-size: 18px;
+  padding-bottom: 10px; /* Ajustar para el espacio de la línea */
+  transition: color 0s ease;
+  position: relative; /* Añade un contexto de posicionamiento */
+  display: inline-block; /* El enlace es inline-block para ajustar su tamaño */
+}
+
+.nav2 a.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%; 
+  height: 3px;
+  background-color: $custom-colors;
+  bottom: 0; /* Ajusta esta propiedad según sea necesario */
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav2 a.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.nav2 a.nav-link:hover {
+  color: $custom-colors;
+}
+
+.btn.btn-infon {
+  border-radius: $custom-border-radius;
+  padding: 10px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: $custom-colors-principal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.seccion5{
+  margin: 50px;
+  padding: 300px;
+}
+
+//CARDS
+.card1 {
+  margin: 0 20px;
+  border: transparent;
+  border-color: transparent;
+  height: 325px;
+  width: 85%;
+  box-shadow: #161343;
+}
+
+.card2 {
+  margin: 0 20px;
+  margin-top: 40px;
+  border: transparent;
+  border-color: transparent;
+  height: 325px;
+  width: 85%;
+  box-shadow: #161343;
+}
+
+.card3 {
+  margin: 0 20px;
+  margin-top: 80px;
+  border: transparent;
+  border-color: transparent;
+  height: 325px;
+  width: 85%;
+  box-shadow: #161343;
+}
+
+.card p {
+  color: rgb(183, 181, 181);
+}
+
+.card-image {
+  margin: 20px;
+  border: none; // Quitar el borde si hay alguno por defecto
+}
+
+.dots {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.btn-card {
+  background-color: $custom-colors-principal;
+  padding: 10px 40px;
+  font-size: 16px;
+  color: white;
+  border-radius: $custom-border-radius;
+  border-color: transparent;
+  box-shadow: 0 2px 4px rgba(39, 43, 71, 0.3);
+}
+
+.btn-card:hover {
+  background-color: white;
+  color: $custom-colors-principal;
+  border-color: $custom-colors-principal;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+//Acordion
+.accordion{
+  margin-left: 370px;
+  margin-right: 370px;
+  margin-bottom: 150px;
+  stop-color: none;
+}
+
+.accordion-body{
+  color: rgb(106, 104, 104);
+  line-height: 2.2rem;
+}
+
+.accordion-button:hover {
+  color: $custom-colors;
+}
+
+.btn.btn-infon2 {
+  border-radius: $custom-border-radius;
+  margin-top: 50px;
+  padding: 10px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: $custom-colors-principal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.infon2 {
+  border-radius: $custom-border-radius;
+  margin: 25px;
+  padding: 20px;
+}
+
+.container-7{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 350px;
+}
+
+//FOOTER
+.container-4 {
+  background-color: $custom-colors-principal;
+  width: 100%; // Asegura que el contenedor ocupe todo el ancho de la página
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // Centra verticalmente los contenidos
+  align-items: center; // Centra horizontalmente los contenidos
+  margin: 0; // Asegura que no haya margen
+  padding: 10px; // Asegura que no haya padding
+}
+
+.text4 {
+  color: white;
+  letter-spacing: 0.4em;
+}
+
+.title2 {
+  color: white;
+  display: inline-block;
+  max-width: 45%;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-right: 40px;
+  padding: 100px;
+  font-size: 16px;
+  color: rgb(224, 222, 222);
+  box-shadow: 0 2px 4px rgba(35, 35, 35, 0.3);
+  width: 100%;
+}
+
+.btn.btn-last{
+  border-radius: $custom-border-radius;
+  padding: 7px;
+  font-size: 16px;
+  color: white;
+  background-color: $custom-colors;
+  border-color: $custom-colors;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-last:hover{
+  background-color: white;
+  color: $custom-colors;
+  border-color: $custom-colors;
+}
+
+.container-footer {
+  background-color: #272453; // 
+  width: 100%;
+}
+
+footer {
+  border-top: none; 
+}
+
+.navbar-footer {
+  justify-content: center;
+  align-items: start;
+}
+
+.navbar-brand {
+  margin-left: 90px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 30px; // Espacio entre los elementos del menú
+}
+
+.navbar-nav2 .nav-link {
+  display: block;
+  text-decoration-color: none;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.col-social{
+margin-right: 70px;
+}
+
+.footer-img {
+  margin-left: 5px; 
+}
+
+
+//acordion
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-icon {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-text {
+  margin-right: auto;
+}
+
+// Estilo para los íconos personalizados
+.collapsed-icon,
+.expanded-icon {
+  margin-left: 10px;
+}
+
+.collapsed-icon {
+  display: block;
+}
+
+.expanded-icon {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) .collapsed-icon {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) .expanded-icon {
+  display: block;
+  fill: $custom-colors; 
+}
+
+.bg-danger {
+  background-color: $custom-colors; 
+  color: #fff; 
+}
+
+.invalid-feedback {
+  display: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss"; 
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .container-simple {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .col-sm-12.col-md-6.d-flex {
+      margin: 10px;
+      
+    }
+    
+    .first{
+      margin: 10px;
+    }
+
+    .custom-shape {
+      display: flex;
+      justify-content: center;
+      position: relative; 
+    }
+
+    .img-fluid {
+      margin-bottom: 20px;
+    }
+  }
+
+  .cuadrado {
+    width: 515px;
+    height: 270px; 
+    border-bottom-left-radius: 85px; 
+    border-top-left-radius: 85px;
+    bottom: auto; 
+    top: 58%; //Vertical
+    left: 68%; //Horizontal
+    transform: translate(-50%, -50%); //Posición para centrar
+  }
+
+  .container-1, .container-2, .container-3 {
+    margin: 10px; // Reduce márgenes laterales
+    padding: 0 10px;
+    text-align: center; // Centra el contenido dentro de los contenedores
+  }
+  
+  .navbar-brand {
+    margin-left: 0px;
+  }
+
+  .navbar-toggler-icon {
+    justify-content: end;
+    columns: 3;
+  }
+
+  .navbar-nav .nav-item {
+    justify-content: end;
+  }
+
+  .container-simple {
+    margin: 10px;
+    justify-content: center;
+    text-align: center; // Centra el contenido
+  }
+
+  .display-3.bold-text {
+    margin-top: 30px;
+    font-size: 40px; 
+    //font-weight: 500px;
+    text-align: center;
+  }
+
+  .text {
+    line-height: 1.5;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 16px;
+    color: $custom-colors-text;
+    font-size: 16px;
+    text-align: center;
+  } 
+
+  .btn.btn-infon {
+    display: none;
+  }
+
+  .a.btn.btn-infon2 {
+    display: none;
+  }
+
+  .col-sm-12.a {
+    padding: 80px;
+  }
+ 
+  .cuadrado2 {
+    width: 410px;
+    height: 250px; 
+    border-bottom-right-radius: 30%; 
+    border-top-right-radius: 30%;
+   // bottom: auto; 
+   //top: 10%; //Vertical
+   left: 0px; //Horizontal
+   margin: 10px;
+   transform: translate(-1%, 14%); //Posición para centrar
+  }
+
+  .text-2 {
+    line-height: 1.5;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 10px;
+    color: $custom-colors-text;
+    font-size: 16px;
+    text-align: center;
+  } 
+
+  .btn-primary {
+    font-size: 16px; 
+    padding: 6px 15px;
+    text-align: center;
+  }
+
+
+  .img-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .img-fluid {
+    width: 100%; // Asegura que las imágenes se ajusten al ancho de la pantalla
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
+
+
+  /*
+  li.nav-item {
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+  }
+  */
+
+
+  .nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav2 a.nav-link {
+    margin-left: 0;
+    margin-right: 0; 
+    padding-bottom: 8px; /* Ajustar para el espacio de la línea */
+    display: block; /* Cada enlace ocupa toda la línea */
+  }
+
+
+
+  .img-fluid2  {
+    width: 100%; // Asegura que las imágenes se ajusten al ancho de la pantalla
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .content {
+    margin-top: 20px; 
+    text-align: center;
+  }
+  
+
+  .container-7 {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .container-4 {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    height: 400px;
+  }
+
+  .title2 {
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .seccion5 {
+    padding: 5px;
+    margin: 5px;
+    margin-top: 60px;
+    text-align: center; 
+  }
+
+  .form-control {
+    height: 50px;
+    width: 368px;
+  }
+
+  .btn.btn-last {
+    height: 50px;
+    width: 368px;
+    font-size: 16px; 
+    padding: 6px 15px;
+    text-align: center;
+  }
+
+  .text-3 {
+    line-height: 1.5;
+    margin-left: 58px;
+    margin-right: 58px;
+    padding: 16px;
+    color: $custom-colors-text;
+    font-size: 16px;
+    text-align: center;
+  } 
+
+  .accordion {
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col-md-4 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .col-social {
+    margin-right: 0px;
+    align-items: center;
+  }
+}
